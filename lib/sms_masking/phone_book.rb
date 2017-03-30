@@ -12,14 +12,14 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.add_phone_book({
-    #   name: "John Doe", 
-    #   mobile: "085699999999", 
-    #   group: "My Group", 
-    #   address: "My Address",
-    #   birth: "19900101",
-    #   desc: "My Description"
-    # })
+    #      sms.add_phone_book({
+    #        name: "John Doe", 
+    #        mobile: "085699999999", 
+    #        group: "My Group", 
+    #        address: "My Address",
+    #        birth: "19900101",
+    #        desc: "My Description"
+    #      })
     #
     def add_phone_book(params = {})
       params[:username] = @username
