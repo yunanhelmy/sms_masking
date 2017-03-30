@@ -25,6 +25,8 @@ This is not official gem of [www.smsmasking.co.id](http://www.smsmasking.co.id/)
 * [Delete Group](https://github.com/yunanhelmy/sms_masking#delete-group)
 * [Get List of Group](https://github.com/yunanhelmy/sms_masking#get-list-of-group)
 * [Find Group](https://github.com/yunanhelmy/sms_masking#find-group)
+* [Checking Customer Account Balance](https://github.com/yunanhelmy/sms_masking#checking-customer-account-balance)
+* [Change Password](https://github.com/yunanhelmy/sms_masking#change-password)
 
 ## Installation
 
@@ -285,6 +287,26 @@ sms.find_group({group: "My Group 1"})
 Parameters :
 
 * `group` : Name to search
+
+### Checking Customer Account Balance
+
+Purpose : Retrieve account balance
+
+```ruby
+sms.balance
+```
+
+### Change Password
+
+Purpose : To change password
+
+```ruby
+sms.change_password({newpasw: "myS3crEt"})
+```
+
+Parameters :
+
+* `newpasw` : New Password
 
 ## Development
 

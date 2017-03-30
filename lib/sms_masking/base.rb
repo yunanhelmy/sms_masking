@@ -3,6 +3,7 @@ require 'sms_masking/response'
 require 'sms_masking/send_sms'
 require 'sms_masking/phone_book'
 require 'sms_masking/group'
+require 'sms_masking/account'
 
 module SmsMasking
   class Base
@@ -16,6 +17,7 @@ module SmsMasking
     include SmsMasking::PhoneBook
     include SmsMasking::Group
     include SmsMasking::Response
+    include SmsMasking::Account
 
     base_uri 'http://send.smsmasking.co.id:8080'
 
