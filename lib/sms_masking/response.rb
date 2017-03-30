@@ -2,7 +2,7 @@ module SmsMasking
   module Response
     def print_response(res)
       {
-        http_response: res,
+        result: res,
         sms_masking_response: {
           return_code: res.body[0..3],
           description: description(res.body[0..3])
