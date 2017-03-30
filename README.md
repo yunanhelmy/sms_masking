@@ -32,8 +32,8 @@ sms = SmsMasking::Base.new(username: "your_username", password: "your_password")
 
 Parameters :
 
-- `username` : your [www.smsmasking.co.id](http://www.smsmasking.co.id/) username
-- `password` : your [www.smsmasking.co.id](http://www.smsmasking.co.id/) password
+* `mobile` : recipient
+* `message` : SMS
 
 ### Send SMS
 ```ruby
@@ -44,6 +44,16 @@ Parameters :
 
 - `mobile` : recipient number
 - `message` : SMS
+
+### Send SMS Group
+```ruby
+sms.send_sms_group({group: "My group", msg: "your_message"})
+```
+
+Parameters :
+
+* `group` : Group Name
+* `message` : SMS
 
 ## Development
 
