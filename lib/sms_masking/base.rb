@@ -1,6 +1,7 @@
 require 'sms_masking/auth'
 require 'sms_masking/response'
 require 'sms_masking/send_sms'
+require 'sms_masking/phone_book'
 
 module SmsMasking
   class Base
@@ -11,6 +12,7 @@ module SmsMasking
     include HTTParty
     include SmsMasking::Auth
     include SmsMasking::SendSms
+    include SmsMasking::PhoneBook
     include SmsMasking::Response
 
     base_uri 'http://send.smsmasking.co.id:8080'
