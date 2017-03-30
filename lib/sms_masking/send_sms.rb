@@ -6,7 +6,7 @@ module SmsMasking
     # * +message+ : SMS
     #
     # ==== Example
-    # sms.send_sms({mobile: "085642568786", message: "your message"})
+    #      sms.send_sms({mobile: "085642568786", message: "your message"})
     #
     def send_sms(params = {})
       params[:username] = @username
@@ -20,7 +20,7 @@ module SmsMasking
     # * +message+ : SMS
     #
     # ==== Example
-    # sms.send_sms_group({group: "My Group", message: "your message"})
+    #      sms.send_sms_group({group: "My Group", message: "your message"})
     #
     def send_sms_group(params = {})
       params[:username] = @username

@@ -40,15 +40,15 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.edit_phone_book({
-    #   id: 1,
-    #   name: "John Doe", 
-    #   mobile: "085699999999", 
-    #   group: "My Group", 
-    #   address: "My Address",
-    #   birth: "19900101",
-    #   desc: "My Description"
-    # })
+    #      sms.edit_phone_book({
+    #        id: 1,
+    #        name: "John Doe", 
+    #        mobile: "085699999999", 
+    #        group: "My Group", 
+    #        address: "My Address",
+    #        birth: "19900101",
+    #        desc: "My Description"
+    #      })
     #
     def edit_phone_book(params = {})
       params[:username] = @username
@@ -63,7 +63,7 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.delete_phone_book({id: 1})
+    #      sms.delete_phone_book({id: 1})
     #
     def delete_phone_book(params = {})
       params[:username] = @username
@@ -79,10 +79,10 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.list_phone_book({
-    #   page: 1, 
-    #   size: 10
-    # })
+    #      sms.list_phone_book({
+    #        page: 1, 
+    #        size: 10
+    #      })
     #
     def list_phone_book(params = {})
       params[:username] = @username
@@ -99,11 +99,11 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.list_phone_book_by_group({
-    #   page: 1, 
-    #   size: 10,
-    #   group: "My Group"
-    # })
+    #      sms.list_phone_book_by_group({
+    #        page: 1, 
+    #        size: 10,
+    #        group: "My Group"
+    #      })
     #
     def list_phone_book_by_group(params = {})
       params[:username] = @username
@@ -118,7 +118,7 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.contact_detail({id: 1})
+    #      sms.contact_detail({id: 1})
     #
     def contact_detail(params = {})
       params[:username] = @username
@@ -133,7 +133,7 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.find_contact({name: "John Doe"})
+    #      sms.find_contact({name: "John Doe"})
     #
     def find_contact(params = {})
       params[:username] = @username
@@ -148,7 +148,7 @@ module SmsMasking
     #
     # ==== Example
     #
-    # sms.find_number({number: "085699999999"})
+    #      sms.find_number({number: "085699999999"})
     #
     def find_number(params = {})
       params[:username] = @username
@@ -157,9 +157,5 @@ module SmsMasking
       print_response res
     end
     
-
-    
-
-
   end
 end
