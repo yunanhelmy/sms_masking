@@ -20,6 +20,11 @@ This is not official gem of [www.smsmasking.co.id](http://www.smsmasking.co.id/)
 * [Get Complete Data](https://github.com/yunanhelmy/sms_masking#get-complete-data)
 * [Find Name](https://github.com/yunanhelmy/sms_masking#find-name)
 * [Find Phone Number](https://github.com/yunanhelmy/sms_masking#find-phone-number)
+* [Add Group](https://github.com/yunanhelmy/sms_masking#add-group)
+* [Edit Group](https://github.com/yunanhelmy/sms_masking#edit-group)
+* [Delete Group](https://github.com/yunanhelmy/sms_masking#delete-group)
+* [Get List of Group](https://github.com/yunanhelmy/sms_masking#get-list-of-group)
+* [Find Group](https://github.com/yunanhelmy/sms_masking#find-group)
 
 ## Installation
 
@@ -215,6 +220,71 @@ sms.find_contact({number: "085699999999"})
 Parameters :
 
 * `number` : Number to search
+
+### Add Group
+
+Purpose : Add a new Group Name
+
+```ruby
+sms.add_group({group: "Group 1"})
+```
+
+Parameters :
+
+* `group` : Group Name
+
+### Edit Group
+
+Purpose : Edit an existing Group
+
+```ruby
+sms.edit_group({id: 1, group: "My Group 1"})
+```
+
+Parameters :
+
+* `group` : Group Name
+
+### Delete Group
+
+Purpose : Delete an existing Group
+
+```ruby
+sms.delete_group({id: 1})
+```
+
+Parameters :
+
+* `id` : Group ID
+
+### Get List of Group
+
+Purpose : Retrieve list of  existing Group
+
+```ruby
+sms.list_group({
+  page: 1, 
+  size: 10
+})
+
+```
+
+Parameters :
+
+* `page` : Page Number (default=1)
+* `size` : number of records per page (default=10)
+
+### Find Group
+
+Purpose : Find a Group
+
+```ruby
+sms.find_group({group: "My Group 1"})
+```
+
+Parameters :
+
+* `group` : Name to search
 
 ## Development
 
