@@ -24,16 +24,26 @@ Or install it yourself as:
 
 ## Usage
 
-### Initalize
+### Initialize
 
 ```ruby
 sms = SmsMasking::Base.new(username: "your_username", password: "your_password")
 ```
 
+Parameters :
+
+- `username` : your [www.smsmasking.co.id](http://www.smsmasking.co.id/) username
+- `password` : your [www.smsmasking.co.id](http://www.smsmasking.co.id/) password
+
 ### Send SMS
 ```ruby
 sms.send_sms({mobile: "085699999999", message: "your_message"})
 ```
+
+Parameters :
+
+- `mobile` : recipient number
+- `message` : SMS
 
 ## Development
 
@@ -43,7 +53,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sms_masking. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yunanhelmy/sms_masking. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

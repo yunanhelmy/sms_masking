@@ -3,7 +3,7 @@ module SmsMasking
     def send_sms(params = {})
       params[:username] = @username
       params[:auth] = auth(params[:mobile])
-      res = self.class.get("/Web2SMS/api/sendSMS.aspx", query: params)
+      res = self.class.get(@base_path+"/sendSMS.aspx", query: params)
       print_response res
     end
   end

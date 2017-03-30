@@ -6,6 +6,7 @@ module SmsMasking
   class Base
     attr_accessor :username
     attr_accessor :password
+    attr_accessor :base_path
 
     include HTTParty
     include SmsMasking::Auth
@@ -15,6 +16,7 @@ module SmsMasking
     base_uri 'http://send.smsmasking.co.id:8080'
 
     def initialize(params = {})
+      @base_path = "/Web2SMS/api"
       params.each do |key, value| 
         instance_variable_set("@#{key}", value)
       end
